@@ -16,11 +16,15 @@ Do one thing really well. Only one reason to change.
 
 - extract configuration into environment variables
 - set up Continuous Deployment from GitHub to Heroku:
-    - connect heroku to github
-    - create application
-    - on `Deploy Tab`
+    - Connect heroku to github:
+        - create application
+        - on `Deploy Tab` select Git Hub, answer yes to security prompt
+        - search for the repository to connect
+        - pick the branch to deploy
+        - click `Enable automatic deploys`
+        - scroll down and click hte `Deploy Branch` button
     - commit and push to GH and the API gets updated on Heroku.
-    - add a "start" script to `package.json`.
+    - add a "start" script to `package.json` > ` "start": "node index.js" `
     - make the port dynamic.
 
 
